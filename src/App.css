@@ -1,22 +1,329 @@
-.App {
-  text-align: center;
+/* header {
+    border-bottom: 1px solid gainsboro;
+} */
+
+.nav {
+    display: none;
+}
+.nav-link {
+    color: #000;
+    display: none;
 }
 
-.App-logo {
-  height: 40vmin;
+.top-image {
+    background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%),
+        url("https://religionclothing.com/media/wysiwyg/Religion_Clothing_London_Store_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link:hover {
+    border-bottom: 2px solid #000;
+    color: #000;
 }
 
-.App-link {
-  color: #09d3ac;
+.top-image h1 {
+    font-size: 3em;
 }
+
+button {
+    background: #906b6b;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.about {
+    background: #624949;
+}
+
+.about h3 {
+    color: #fff;
+    font-family: 'Century';
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.about article {
+    color: #fff;
+}
+
+.login-left {
+    background: #624949;
+    height: 100vh;
+}
+
+.login {
+    overflow-x: hidden;
+}
+
+.login-card {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-40%, 15%);
+}
+
+.login-box {
+    width: 25em;
+}
+
+.login-left h1 {
+    color: #291d1d;
+}
+
+.sign-card {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    transform: translate(-40%, 7%);
+}
+
+.sign-box {
+    width: 25em;
+}
+
+footer {
+    background: #291d1d;
+    height: auto;
+}
+
+footer h6 {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-bottom {
+    background: #130d0d;
+}
+
+.card-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+article h2 {
+  font-size: 21px;
+}
+
+.dashboard{
+  overflow-x: hidden;
+}
+
+.dashboard-header{
+  background:#291d1d;
+  height: 100vh;
+}
+
+.dash-link {
+  color: #fff;
+  border-bottom: 1px solid #130d0d;
+}
+
+.dash-article{
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.dash-title{
+  background: #201616;
+  color: #fff;
+}
+
+.other-link {
+  color: #fff;
+}
+
+.muted {
+  font-size: 12px;
+}
+
+.details-btn {
+    background: #906b6b;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .nav {
+        display: block;
+    }
+
+    .nav-link {
+        color: #000;
+        display: block;    
+    }
+    
+    .top-image {
+        background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%),
+        surl("https://religionclothing.com/media/wysiwyg/Religion_Clothing_London_Store_1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        color: #fff;
+    }
+    
+    .link:hover {
+        border-bottom: 2px solid #000;
+        color: #000;
+    }
+    
+    .top-image h1 {
+        font-size: 3em;
+    }
+    
+    button {
+        background: #906b6b;
+        border: none;
+        color: white;
+        padding: 5px;
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    
+    .about {
+        background: #624949;
+    }
+    
+    .about h3 {
+        color: #fff;
+        font-family: 'Century';
+        font-size: 50px;
+        font-weight: 100;
+    }
+    
+    .about article {
+        color: #fff;
+    }
+    
+    .login-left {
+        background: #624949;
+        height: 100vh;
+    }
+    
+    .login {
+        overflow-x: hidden;
+    }
+    
+    .login-card {
+        position: absolute;
+        top: 15%;
+        left: 40%;
+        transform: translate(-40%, 15%);
+    }
+    
+    .login-box {
+        width: 25em;
+    }
+    
+    .login-left h1 {
+        color: #291d1d;
+    }
+    
+    .sign-card {
+        position: absolute;
+        top: 7%;
+        left: 40%;
+        transform: translate(-40%, 7%);
+    }
+    
+    .sign-box {
+        width: 25em;
+    }
+    
+    footer {
+        background: #291d1d;
+        height: auto;
+    }
+    
+    footer h6 {
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    footer p {
+        color: white;
+    }
+    
+    .footer-bottom {
+        background: #130d0d;
+    }
+    
+    .card-text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 21px;
+    }
+    
+    article h2 {
+      font-size: 21px;
+    }
+    
+    .dashboard{
+      overflow-x: hidden;
+    }
+    
+    .dashboard-header{
+      background:#291d1d;
+      height: 100vh;
+    }
+    
+    .dash-link {
+      color: #fff;
+      border-bottom: 1px solid #130d0d;
+    }
+    
+    .dash-article{
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    
+    .dash-title{
+      background: #201616;
+      color: #fff;
+    }
+    
+    .other-link {
+      color: #fff;
+    }
+    
+    .muted {
+      font-size: 12px;
+    }
+    
+    .details-btn {
+        background: #906b6b;
+        border: none;
+        color: white;
+        padding: 5px;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+    }
+}    
