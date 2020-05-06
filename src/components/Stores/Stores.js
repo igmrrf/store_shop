@@ -16,7 +16,6 @@ class Stores extends Component {
         this.setState({ stores: products });
     }
     render() {
-        console.log(this.state.stores);
         return (
             <div>
                 <Header />
